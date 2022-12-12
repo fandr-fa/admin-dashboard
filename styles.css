@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .dashboard {
+    display: grid;
+    grid-template: 150px 1fr / 0.25fr 1fr;
+    grid-template-areas: "left-panel header"
+                         "left-panel projects";
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .left-panel {
+    grid-area: left-panel;
+    background-color: rgb(94, 148, 167);
+  }
+
+  .left-panel-item.left-panel-header {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .left-panel-item {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .left-panel-item > a {
+    text-decoration:none;
+    color: white;
+  }
+
+  .left-panel-item.left-panel-settings {
+    margin-top: 64px;
+  }
+
+  #header {
+    grid-area: header;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    background-color: white;
+  }
+
+  #header-top, #header-bottom {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+  }
+
+  #header-left {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+  }
+
+  #header-right{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+  }
+
+  #projects {
+    grid-area: projects;
+  }
+
+  #main {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    background-color: gray;
+  }
+
+  #main-projects {
+    display: grid;
+    grid-template: 0.1fr 1fr / 1fr;
+  }
+
+  #main-projects-projects {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  }
+
+  #announcements {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #trending {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* custom icons */
+  .hwtocssonly:before {
+    /* essentials */
+    content: "";
+    font: normal normal normal 14px/1 'FortAwesomeHowTo';
+
+    /* optional and for display only */
+    display: inline-block;
+    margin-right: 0.50rem;
+  }
