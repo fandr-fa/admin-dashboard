@@ -3,100 +3,127 @@ body {
     padding: 0;
   }
 
-  .dashboard {
-    display: grid;
-    grid-template: 150px 1fr / 0.25fr 1fr;
-    grid-template-areas: "left-panel header"
-                         "left-panel projects";
-    width: 100vw;
-    height: 100vh;
-  }
+.dashboard {
+  display: grid;
+  grid-template: 150px 1fr / 0.25fr 1fr;
+  grid-template-areas: "left-panel header"
+                        "left-panel projects";
+  width: 100vw;
+  height: 100vh;
+}
 
-  .left-panel {
-    grid-area: left-panel;
-    background-color: rgb(94, 148, 167);
-  }
+.left-panel {
+  grid-area: left-panel;
+  background-color: rgb(94, 148, 167);
+}
 
-  .left-panel-item.left-panel-header {
-    font-size: 24px;
-    margin-bottom: 32px;
-  }
+.left-panel-item.left-panel-header {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
 
-  .left-panel-item {
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+.left-panel-item {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-  .left-panel-item > a {
-    text-decoration:none;
-    color: white;
-  }
+.left-panel-item > a {
+  text-decoration:none;
+  color: white;
+}
 
-  .left-panel-item.left-panel-settings {
-    margin-top: 64px;
-  }
+.left-panel-item.left-panel-settings {
+  margin-top: 64px;
+}
 
-  #header {
-    grid-area: header;
-    display: grid;
-    grid-template: 1fr 1fr / 1fr;
-    background-color: white;
-  }
+#header {
+  grid-area: header;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
+  background-color: white;
+  margin: 20px 40px;
+  border: 1px solid blue;
+}
 
-  #header-top, #header-bottom {
-    display: grid;
-    grid-template: 1fr / 1fr 1fr;
-  }
+#header-top, #header-bottom {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+}
 
-  #header-left {
-    display: grid;
-    grid-template: 1fr 1fr / 1fr;
-  }
+#header-left {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
+}
 
-  #header-right{
-    display: grid;
-    grid-template: 1fr 1fr / 1fr;
-  }
+#header-right{
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
+}
 
-  #projects {
-    grid-area: projects;
-  }
+#projects {
+  grid-area: projects;
+}
 
-  #main {
-    display: grid;
-    grid-template: 1fr / 1fr 1fr;
-    background-color: gray;
-  }
+#main {
+  display: grid;
+  grid-template: 1fr / 1fr auto;
+  background-color: gray;
+}
 
-  #main-projects {
-    display: grid;
-    grid-template: 0.1fr 1fr / 1fr;
-  }
+#main-projects {
+  display: grid;
+  grid-template: auto 1fr / 1fr;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
-  #main-projects-projects {
-    display: grid;
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-  }
+#main-side {
+  margin-right: 40px;
+}
 
-  #announcements {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+#main-projects-projects {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+}
 
-  #trending {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+.project {
+  border: 1px solid blue;
+}
 
-  /* custom icons */
-  .hwtocssonly:before {
-    /* essentials */
-    content: "";
-    font: normal normal normal 14px/1 'FortAwesomeHowTo';
+#announcements {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
-    /* optional and for display only */
-    display: inline-block;
-    margin-right: 0.50rem;
-  }
+.dashboard-header {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+#trending {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#announcements-content, #trending-content {
+  border: 1px solid orange;
+  border-radius: 25px;
+  padding: 20px;
+  width: 200px;
+}
+
+.trending-content-item {
+  display: flex;
+}
+
+.trending-content-item-right {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.announcements-content-item-header {
+  font-weight: bold;
+}
