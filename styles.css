@@ -1,7 +1,8 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+}
 
 .dashboard {
   display: grid;
@@ -10,6 +11,11 @@ body {
                         "left-panel projects";
   width: 100vw;
   height: 100vh;
+}
+
+.dashboard-icon {
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .left-panel {
@@ -49,12 +55,7 @@ body {
 #header-top, #header-bottom {
   display: grid;
   grid-template: 1fr / 1fr 1fr;
-  border: 1px solid orange;
   align-items: center;
-}
-
-#header-top-right, #header-top-left, #header-bottom-right, #header-bottom-left {
-  border: 1px solid orange;
 }
 
 #header-top-left {
@@ -64,7 +65,18 @@ body {
 
 #header-top-right {
   display: grid;
+  margin-left: auto;
+  margin-right: 16px;
+  align-items: center;
   grid-template: 1fr / auto auto 1fr;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+.profile-picture {
+  margin: 0px 16px;
 }
 
 #header-bottom-left {
@@ -72,16 +84,44 @@ body {
   grid-template: 1fr 1fr / auto 1fr;
 }
 
+.header-button {
+  border-radius: 10px;
+  min-width: 90px;
+  min-height: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  background-color: #1992d4;
+  color: white;
+  font-size: medium;
+  border: none;
+}
+
+#search {
+  border-radius: 15px;
+  background-color: #e2e8f0;
+  border: none;
+}
+
+#header-bottom-right {
+  display: flex;
+  justify-content: right;
+}
+
 #greetings-icon {
-  grid-area: 1 / 1 / 2 / 1;
+  grid-area: 1 / 1 / 3 / 1;
 }
 
 #greetings-text {
   grid-area: 1 / 2 / 2 / 2;
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
 }
 
 #greetings-user {
-  grid-area: 2 / 2 / 2 / 2;
+  grid-area: 2 / 2 / 3 / 2;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 #projects {
@@ -111,7 +151,7 @@ body {
 }
 
 .project {
-  border: 1px solid blue;
+  border: none;
 }
 
 #announcements {
@@ -121,8 +161,7 @@ body {
 
 #announcements-content, #trending-content, .project {
   background-color: white;
-  border: 1px solid orange;
-  border-radius: 25px;
+  border-radius: 12px;
   padding: 20px;
 }
 
@@ -145,6 +184,12 @@ body {
 
 #announcements-content, #trending-content {
   width: 200px;
+}
+
+#trending-content {
+  display: grid;
+  grid-template: auto / 1fr;
+  gap: 16px;
 }
 
 .trending-content-item {

@@ -1,79 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
 
-    <div class="dashboard">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="dashboard">
     <div class="left-panel">
       <div class="left-panel-item left-panel-header">
-        <img src="images/test-icon.png" alt="Dashboard Icon">
+        <img src="images/Icons/dashboard.png" alt="Dashboard Icon">
         <a href="">Dashboard</a>
       </div>
       <div class="left-panel-item">
-        <img src="images/test-icon.png" alt="Home Icon">
+        <img class="dashboard-icon" src="images/Icons/home.png" alt="Home Icon">
         <a href="">Home</a>
       </div>
       <div class="left-panel-item">
-        <img src="images/test-icon.png" alt="Profile Icon">
+        <img class="dashboard-icon" src="images/Icons/account.png" alt="Profile Icon">
         <a href="">Profile</a>
       </div>
       <div class="left-panel-item">
-        <img src="images/test-icon.png" alt="Messages Icon">
+        <img class="dashboard-icon" src="images/Icons/message.png" alt="Messages Icon">
         <a href="">Messages</a>
       </div>
       <div class="left-panel-item">
-        <img src="images/test-icon.png" alt="History Icon">
+        <img class="dashboard-icon" src="images/Icons/history.png" alt="History Icon">
         <a href="">History</a>
       </div>
       <div class="left-panel-item">
-        <img src="images/test-icon.png" alt="Tasks Icon">
+        <img class="dashboard-icon" src="images/Icons/tasks.png" alt="Tasks Icon">
         <a href="">Tasks</a>
       </div>
       <div class="left-panel-item">
-        <img src="images/test-icon.png" alt="Communities Icon">
+        <img class="dashboard-icon" src="images/Icons/community.png" alt="Communities Icon">
         <a href="">Communities</a>
       </div>
       <div class="left-panel-item left-panel-settings">
-        <img src="images/test-icon.png" alt="Settings Icon">
+        <img class="dashboard-icon" src="images/Icons/settings.png" alt="Settings Icon">
         <a href="">Settings</a>
       </div>
       <div class="left-panel-item">
-        <img src="images/test-icon.png" alt="Support Icon">
+        <img class="dashboard-icon" src="images/Icons/support.png" alt="Support Icon">
         <a href="">Support</a>
       </div>
       <div class="left-panel-item">
-        <img src="images/test-icon.png" alt="Privacy Icon">
+        <img class="dashboard-icon" src="images/Icons/privacy.png" alt="Privacy Icon">
         <a href="">Privacy</a>
       </div>
     </div>
     <div id="header">
       <div id="header-top">
         <div id="header-top-left">
-          <img src="images/test-icon.png" alt="Search Icon">
+          <img src="images/Icons/search.png" alt="Search Icon">
           <input type="text" id="search" name="search">
         </div>
         <div id="header-top-right">
-          <img src="images/test-icon.png" alt="Notification Icon">
-          <img src="images/test-icon.png" alt="Profile Picture">
-          <div>Morgan Oakley</div>
+          <img class="profile-notifications" src="images/Icons/notifications.png" alt="Notification Icon">
+          <img class="profile-picture" src="images/Icons/alien.png" alt="Profile Picture">
+          <div class="profile-name">Morgan Oakley</div>
         </div>
       </div>
       <div id="header-bottom">
         <div id="header-bottom-left">
-          <img src="images/test-icon.png" alt="Profile Icon" id="greetings-icon">
+          <img src="images/Icons/alienBig.png" alt="Profile Icon" id="greetings-icon">
           <div id="greetings-text">Hi there,</div>
           <div id="greetings-user">Morgan Oakley (@morgan)</div>
         </div>
         <div id="header-bottom-right">
-          <button type="button">New</button>>
-          <button type="button">Upload</button>>
-          <button type="button">Share</button>>
+          <button class="header-button" type="button">New</button>
+          <button class="header-button" type="button">Upload</button>
+          <button class="header-button" type="button">Share</button>
         </div>
       </div>
     </div>
@@ -96,21 +97,24 @@
             <div class="announcements-content-item">
               <div class="announcements-content-item-header">Site Maintenance</div>
               <div class="announcements-content-item-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
               </div>
               <hr>
             </div>
             <div class="announcements-content-item">
               <div class="announcements-content-item-header">Community Share Day</div>
               <div class="announcements-content-item-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
               </div>
               <hr>
             </div>
             <div class="announcements-content-item">
               <div class="announcements-content-item-header">Updated Privacy Policy</div>
               <div class="announcements-content-item-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
 
               </div>
             </div>
@@ -120,28 +124,28 @@
           <div class="dashboard-header" id="trending-header">Trending</div>
           <div id="trending-content">
             <div class="trending-content-item">
-              <img src="images/test-icon.png" alt="Dog Icon">
+              <img src="images/Icons/ferry.png" alt="Ferry Icon">
               <div class="trending-content-item-right">
                 <div>@tegan</div>
                 <div>World Peace Builder</div>
               </div>
             </div>
             <div class="trending-content-item">
-              <img src="images/test-icon.png" alt="Dog Icon">
+              <img src="images/Icons/alien.png" alt="Alien Icon">
               <div class="trending-content-item-right">
                 <div>@morgan</div>
                 <div>Super Cool Project</div>
               </div>
             </div>
             <div class="trending-content-item">
-              <img src="images/test-icon.png" alt="Dog Icon">
+              <img src="images/Icons/bear.png" alt="Bear Icon">
               <div class="trending-content-item-right">
                 <div>@kendal</div>
                 <div>Life Changing App</div>
               </div>
             </div>
             <div class="trending-content-item">
-              <img src="images/test-icon.png" alt="Dog Icon">
+              <img src="images/Icons/dog.png" alt="Dog Icon">
               <div class="trending-content-item-right">
                 <div>@alex</div>
                 <div>No Traffic Maker</div>
@@ -152,6 +156,5 @@
       </div>
     </div>
   </div>
-
 </body>
 </html>
